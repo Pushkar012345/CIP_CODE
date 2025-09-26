@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    string s;
+    cin >> s; // Input the string
+
+    string newstring = ""; // Initialize an empty string for the reversed string
+
+    int l = s.length() - 1; // Calculate the last index of the string
+
+    // Traverse the string in reverse order
+    while (l >= 0) {
+        newstring = newstring + s[l]; // Append the current character to the new string
+        l--; // Decrement the index
+    }
+
+    cout << newstring; // Output the reversed string
+
+    return 0;
+}
