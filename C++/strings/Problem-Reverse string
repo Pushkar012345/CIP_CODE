@@ -1,0 +1,32 @@
+#PBL:-
+/*
+Reverse String
+Difficulty: BasicAccuracy: 64.88%Submissions: 31K+Points: 1Average Time: 10m
+Given a string s, you need to reverse it.
+
+Examples:
+
+Input: s = "Hello"
+Output: "olleH"
+Explanation: Reverse of Hello is olleH
+Input: s = "World"
+Output: "dlroW"
+Explanation: Reverse of World is dlroW
+*/
+
+
+string reverseString(string &s) {
+    // code here
+    int n=s.length()-1;
+    string newstring="";
+    
+    
+    
+    while(n>=0)
+    {
+        newstring=newstring+s[n];
+        n--;
+    }
+    
+    return newstring;
+}
