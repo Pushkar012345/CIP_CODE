@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    string s;
+    cin >> s; // Input the string
+
+    int start = 0;              // Pointer to the beginning of the string
+    int end = s.length() - 1;   // Pointer to the end of the string
+
+    // Check for palindrome
+    while (start < end) {
+        if (s[start] != s[end]) {
+            cout << "No";       // Not a palindrome
+            return 0;           // Exit the program
+        }
+        start++;                // Move start pointer forward
+        end--;                  // Move end pointer backward
+    }
+
+    cout << "Yes";              // The string is a palindrome
+    return 0;
+}
